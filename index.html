@@ -14,8 +14,9 @@
       </p>
       <form id="survey-form">
         <div>
-          <label for="name" id="name-label">Name</label>
+          <label for="name" id="name-label" >Name</label>
           <input
+          value="name"
             type="text"
             name="name"
             id="name"
@@ -26,6 +27,7 @@
         <div>
           <label for="email" id="email-label">Email</label>
           <input
+          value="email"
             type="email"
             name="email"
             id="email"
@@ -57,22 +59,13 @@
         </div>
         <div>
           <p>World you recomend Microverse to a friend?</p>
-          <label for=""
-            ><input
-              type="radio"
-              value="a"
-              name="Definitely"
-              id=""
-            />Definitely</label
-          >
-          <br />
-          <label for=""
-            ><input type="radio" value="b" name="Maybe" id="" />Maybe</label
-          ><br />
-          <label for=""
-            ><input type="radio" value="c" name=" Notsure" id="" />Not
-            sure</label
-          >
+          <label for="definitely">Definitely</label>
+          <input type="radio" value="a"  name="Definitely" id="definitely"/> <br/>
+          <label for="notsure">Not Sure</label>
+          <input type="radio" value="a"  name="Definitely" id="notsure"/> <br/>
+          <label for="maybe">May be</label>
+          <input type="radio" value="a"  name="Definitely" id="maybe"/> <br/>
+     
         </div>
 
         <div>
@@ -100,31 +93,28 @@
             Visualization</label
           ><br />
           <label for=""
-            ><input type="checkbox" name="Challenges" id="" />Challenges</label
+            ><input type="checkbox" name="Challenges" id="" value="common"/>Challenges</label
           ><br />
           <label for=""
-            ><input type="checkbox" name="Challenges" id="" />Challenges</label
-          ><br />
-          <label for=""
-            ><input type="checkbox" name="Open" id="" />Open Source
+            ><input type="checkbox" name="Open" id="" value="common"/>Open Source
             Community</label
           ><br />
           <label for=""
-            ><input type="checkbox" name="Gitter" id="" />Gitter Help
+            ><input type="checkbox" name="Gitter" id="" value="common"/>Gitter Help
             Room</label
           ><br />
           <label for=""
-            ><input type="checkbox" name="Videos" id="" />Videos</label
+            ><input type="checkbox" name="Videos" id="" value="common"/>Videos</label
           ><br />
           <label for=""
-            ><input type="checkbox" name="City" id="" />City Meetups</label
+            ><input type="checkbox" name="City" id="" value="common"/>City Meetups</label
           ><br />
-          <label for=""><input type="checkbox" name="Wiki" id="" />Wiki</label
+          <label for=""><input type="checkbox" name="Wiki" id="" value="common"/>Wiki</label
           ><br />
-          <label for=""><input type="checkbox" name="Forms" id="" />Forms</label
+          <label for=""><input type="checkbox" name="Forms" id="" value="common"/>Forms</label
           ><br />
           <label for=""
-            ><input type="checkbox" name="Additional" id="" />Additional
+            ><input type="checkbox" name="Additional" id="" value="common"/>Additional
             Courses</label
           ><br />
         </div>
@@ -139,7 +129,7 @@
           ></textarea>
         </div>
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
         </div>
       </form>
     </div>
