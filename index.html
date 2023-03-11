@@ -7,84 +7,141 @@
     <title>Microverse Survey Form</title>
   </head>
   <body>
- <div class="container"> 
-    <h1 id="title">Microverse Survey Form</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-    <form id="Survey form">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter You Email" required>
-      </div>
-      <div>
-        <label for="number">Age</label>
-        <input type="number" name="age" id="number" placeholder="Age">
-      </div>
-      <div>
-        <p>Which options best decsribes your current role?</p>
-        <select name="role" id="">
-        <option disabled selected value>Select Your Role</option>
-        <option value="student">Student</option>
-        <option value="job">Full Time Job</option>
-        <option value="learner">Full Time Learner</option>
-        <option value="preferNo">Prefer not to say</option>
-        <option value="others">Others</option>
-      </select>
-      </div>
-      <div>
-        <p>World you recomend Microverse to a friend?</p>
-        <label for=""><input type="radio" name="" id="">Definitely</label> <br>
-        <label for=""><input type="radio" name="" id="">May be</label><br>
-        <label for=""><input type="radio" name="" id="">Not sure</label>
-      </div>
+    <div class="container">
+      <h1 id="title">Microverse Survey Form</h1>
+      <p id="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </p>
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter You Email"
+            required
+          />
+        </div>
+        <div>
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            min="10"
+            max="70"
+            name="age"
+            id="number"
+            placeholder="Age"
+          />
+        </div>
+        <div>
+          <p>Which options best decsribes your current role?</p>
+          <select name="role" id="dropdown">
+            <option disabled selected value>Select Your Role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div>
+          <p>World you recomend Microverse to a friend?</p>
+          <label for=""
+            ><input
+              type="radio"
+              value="a"
+              name="Definitely"
+              id=""
+            />Definitely</label
+          >
+          <br />
+          <label for=""
+            ><input type="radio" value="b" name="Maybe" id="" />Maybe</label
+          ><br />
+          <label for=""
+            ><input type="radio" value="c" name=" Notsure" id="" />Not
+            sure</label
+          >
+        </div>
 
-      <div>
-        <p>What is your favroute feature at Microverse?</p>
-        <select name="role" id="">
-        <option disabled selected value>Select an option</option>
-        <option value="challenges">Challenges</option>
-        <option value="projects">Projects</option>
-        <option value="community">Cummunity</option>
-        <option value="opensource">Open Source</option>
-        </select>
-      </div>
-      <div>
-         <p>What would you like to see improved?</p>
-        <label for=""><input type="checkbox" name="" id="">Front End Projects</label><br>
-        <label for=""><input type="checkbox" name="" id="">Back End Projects</label><br>
-        <label for=""><input type="checkbox" name="" id="">Data Visualization</label><br>
-        <label for=""><input type="checkbox" name="" id="">Challnegs</label><br>
-        <label for=""><input type="checkbox" name="" id="">Challenges</label><br>
-        <label for=""><input type="checkbox" name="" id="">OPen Source Community</label><br>
-        <label for=""><input type="checkbox" name="" id="">Gitter Help Room</label><br>
-        <label for=""><input type="checkbox" name="" id="">Videos</label><br>
-        <label for=""><input type="checkbox" name="" id="">City Meetups</label><br>
-        <label for=""><input type="checkbox" name="" id="">Wiki</label><br>
-        <label for=""><input type="checkbox" name="" id="">Forms</label><br>
-        <label for=""><input type="checkbox" name="" id="">Additional Courses</label><br>
-      </div>
-      <div>
-        <p>Any comments or suggestions?</p>
-        <textarea name="" id="" cols="35" rows="5" placeholder="Enter your comments here..."></textarea>
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-       
-      
-
-    </form>
-    
-
-
- </div>
-
+        <div>
+          <p>What is your favroute feature at Microverse?</p>
+          <select name="role" id="">
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Cummunity</option>
+            <option value="opensource">Open Source</option>
+          </select>
+        </div>
+        <div>
+          <p>What would you like to see improved?</p>
+          <label for=""
+            ><input type="checkbox" value="a" name="Front" id="" />Front End
+            Projects</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" value="b" name="Back" id="" />Back End
+            Projects</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" value="c" name="Data" id="" />Data
+            Visualization</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" name="Challenges" id="" />Challenges</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" name="Challenges" id="" />Challenges</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" name="Open" id="" />Open Source
+            Community</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" name="Gitter" id="" />Gitter Help
+            Room</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" name="Videos" id="" />Videos</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" name="City" id="" />City Meetups</label
+          ><br />
+          <label for=""><input type="checkbox" name="Wiki" id="" />Wiki</label
+          ><br />
+          <label for=""><input type="checkbox" name="Forms" id="" />Forms</label
+          ><br />
+          <label for=""
+            ><input type="checkbox" name="Additional" id="" />Additional
+            Courses</label
+          ><br />
+        </div>
+        <div>
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name=""
+            id=""
+            cols="35"
+            rows="5"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
- 
- 
-  
-
 </html>
